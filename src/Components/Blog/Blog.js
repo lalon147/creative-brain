@@ -47,14 +47,14 @@ const Blog = () => {
     </Accordion.Title>
     <Accordion.Content>
       <p className="mb-2 text-gray-500 dark:text-gray-400">
+       UseRef( )
+ helps us to change values between renders ,It can be used to store mutable values that can cause re-render
+       </p>
+      <p className="mb-2 text-gray-500 dark:text-gray-400">
+       more over it can be used to access the dom directly 
+      </p>
+      <p className="mb-2 text-gray-500 dark:text-gray-400"></p>
        
-      </p>
-      <p className="mb-2 text-gray-500 dark:text-gray-400">
-        However, we actually recommend using both Flowbite, Flowbite Pro, and even Tailwind UI as there is no technical reason stopping you from using the best of two worlds.
-      </p>
-      <p className="mb-2 text-gray-500 dark:text-gray-400">
-        Learn more about these technologies:
-      </p>
       
     </Accordion.Content>
   </Accordion.Panel>

@@ -4,9 +4,11 @@ import './App.css';
 import Blog from './Components/Blog/Blog';
 import Home from './Components/Home/Home';
 import Quiz from './Components/Quiz/Quiz';
+import Chart from "./Components/Chart/Chart"
 
 
 import Main from './layouts/Main';
+import Error from './Components/Error/Error';
 
 
 function App() {
@@ -34,8 +36,18 @@ function App() {
         {
            path:"/blog",
            element:<Blog></Blog>     
+        },
+        {
+          path:"/chart",
+          element:<Chart></Chart>,
+          loader:()=>{
+            return fetch("")
+          }
         }
       ]
+    },{
+      path:"*",
+      element:<Error></Error>
     }
   ])
   return (
