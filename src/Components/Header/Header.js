@@ -1,13 +1,14 @@
+import NavBar from "./NavBar"
 import React from 'react';
-import Myself from './Myself';
-import NavBar from './NavBar';
+import Myself from "./Myself"
 
 
 const Header = () => {
     return (
         <div>
-          <NavBar/>  
-          <Myself/>
+          <NavBar></NavBar> 
+          <Myself></Myself> 
+
         </div>
     );
 };

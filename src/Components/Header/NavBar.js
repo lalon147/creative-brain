@@ -13,8 +13,8 @@ const NavBar = () => {
                    <div>
                        <ul className='flex justify-between pt-4 px-4'>
                           <li><Link className='text-none text-xl' to="/">Topics</Link></li>
-                          <Link><a className='text-none text-xl' to="/blog">Blogs</a></Link>
-                          <Link><a className='text-none text-xl' to=""> About</a></Link>
+                          <li><Link className='text-none text-xl' to="/blog">Blogs</Link></li>
+                          <li><Link className='text-none text-xl' to=""> About</Link></li>
                        </ul>
                    </div>
             </nav>   
