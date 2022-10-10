@@ -41,7 +41,8 @@ function App() {
           path:"/chart",
           element:<Chart></Chart>,
           loader:()=>{
-            return fetch("")
+            return fetch("https://openapi.programming-hero.com/api/quiz");
+            
           }
         }
       ]

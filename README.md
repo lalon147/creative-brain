@@ -1,5 +1,12 @@
 # Getting Started with Create React App
 
+#Project Description 
+
+1.This Project Allow us to Check out ability towards Modern SkillSet 
+2.It os consists of Demanding Skills Like Git,JavaScript,React,HTML
+3.It can track our records of learning 
+4.we can always come back and test ourselves
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
