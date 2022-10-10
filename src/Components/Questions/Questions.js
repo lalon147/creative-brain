@@ -1,19 +1,21 @@
 import React, { useState } from 'react';
 import Toasted from '../Toasted/Toasted';
+import Toasted2 from '../Toasted2/Toasted2';
 
 
 
 const Questions = (props) => {
+    const [correct,setCorrect]=useState()
 const [showAnswer,setShowAnswer]=useState("")
     const question=props.question;
     console.log(question);
      const correctOrNot=(option)=>{
            if(question.correctAnswer===option){
-            console.log("clicked");
-                <Toasted/>
+            setCorrect(true);
+                
            }
            else{
-                 
+                 setCorrect(false);
            }
      }
 
@@ -46,6 +48,9 @@ const [showAnswer,setShowAnswer]=useState("")
                       }} className='bg-slate-400 p-2 rounded-lg font-bold text-xl'>{option}</button>
                     })
                 }
+
+                { correct &&   <Toasted/>}
+                
               </div>
 
               

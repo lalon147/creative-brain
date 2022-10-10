@@ -4,7 +4,7 @@ import { Toast } from 'flowbite-react';
 
 const Toasted = () => {
     return (
-        <div className='fixed top-5 left-48'>
+        <div className='fixed top-5 right-20'>
                   <Toast>
     <div className="inline-flex h-8 w-8 shrink-0 items-center justify-center rounded-lg bg-green-100 text-green-500 dark:bg-green-800 dark:text-green-200">
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="w-6 h-6">

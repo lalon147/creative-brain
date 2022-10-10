@@ -1,5 +1,6 @@
 import React from 'react';
 import logo from "../../logo.jpg"
+import { Link } from 'react-router-dom';
 
 const NavBar = () => {
     return (
@@ -11,9 +12,9 @@ const NavBar = () => {
                    </div>
                    <div>
                        <ul className='flex justify-between pt-4 px-4'>
-                          <li><a className='text-none text-xl'>Topics</a></li>
-                          <li><a className='text-none text-xl'>Contact</a></li>
-                          <li><a className='text-none text-xl'> About</a></li>
+                          <li><Link className='text-none text-xl' to="/">Topics</Link></li>
+                          <Link><a className='text-none text-xl' to="/blog">Blogs</a></Link>
+                          <Link><a className='text-none text-xl' to=""> About</a></Link>
                        </ul>
                    </div>
             </nav>   
