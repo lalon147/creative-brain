@@ -1,8 +1,10 @@
-import React from 'react';
+
 import { Toast } from 'flowbite-react';
 
 
+
 const Toasted = () => {
+
     return (
         <div className='fixed top-5 right-20'>
                   <Toast>
@@ -14,6 +16,7 @@ const Toasted = () => {
     </div>
     <div className="ml-3 text-sm font-normal">
       Correct Answer
+      
     </div>
     <Toast.Toggle />
   </Toast>

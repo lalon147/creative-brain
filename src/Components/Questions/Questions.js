@@ -1,21 +1,31 @@
 import React, { useState } from 'react';
 import Toasted from '../Toasted/Toasted';
-import Toasted2 from '../Toasted2/Toasted2';
+
+import Toasted2 from "../Toasted2/Toasted2"
+
+
 
 
 
 const Questions = (props) => {
-    const [correct,setCorrect]=useState()
+   
+
+ 
+   
+
 const [showAnswer,setShowAnswer]=useState("")
+  const [isCorrect ,setIsCorrect]=useState(false);
     const question=props.question;
-    console.log(question);
+   
      const correctOrNot=(option)=>{
            if(question.correctAnswer===option){
-            setCorrect(true);
+                   
+                  setIsCorrect("show")
                 
            }
            else{
-                 setCorrect(false);
+                 setIsCorrect("notShow")
+             
            }
      }
 
@@ -24,7 +34,7 @@ const [showAnswer,setShowAnswer]=useState("")
      }
     
     
-    
+
     return (
         <div className='bg-slate-200 border-2 my-10 p-5 rounded-lg'>
               <div className='question text-xl'>
@@ -44,12 +54,28 @@ const [showAnswer,setShowAnswer]=useState("")
                 {
                     question.options.map(option=>{
                       return  <button onClick={()=>{
-                          correctOrNot(option)
-                      }} className='bg-slate-400 p-2 rounded-lg font-bold text-xl'>{option}</button>
+                         
+                            correctOrNot(option)
+                          }} className='bg-slate-400 p-2 rounded-lg font-bold text-xl'>{option}</button>
                     })
+
+                
+                
+                   
+
                 }
 
-                { correct &&   <Toasted/>}
+               
+                   <div>
+                              
+
+                             {isCorrect==="show"?<Toasted/>:isCorrect==="notShow"?<Toasted2/>:isCorrect==null?<></>:<br></br>}
+                  
+                            
+                   </div>
+               
+              
+               
                 
               </div>
 
