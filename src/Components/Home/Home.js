@@ -6,7 +6,7 @@ const Home = () => {
     const topics=useLoaderData();
     
     return (
-        <div className='grid grid-cols-4 gap-5 m-12'>
+        <div className='grid md:grid-cols-4 gap-5 m-12 grid-cols-1'>
            {
             topics.data.map(topic=>{
                 return <Topics key={topic.id} topic={topic}></Topics>
